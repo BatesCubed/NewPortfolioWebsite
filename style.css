@@ -1,4 +1,33 @@
+@font-face {
+    font-family: 'Lorin-Regular';
+    src: url(Lorin-Regular.ttf)
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lorin-Regular', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+#landingPage {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(BlueBackground.png);
+    background-repeat: none;
+    background-size: 1920px 1080px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.navAnchor {
+    text-decoration: none;
+    padding: 20px;
 }
