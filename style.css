@@ -13,9 +13,6 @@
     scroll-behavior: smooth;
 }
 
-body {
-}
-
 #landingPage {
     height: 100vh;
     background-image: url('BlueBackground.png');
@@ -41,9 +38,6 @@ nav ul li {
     display: inline-block;
     padding-bottom: 0.24rem;
     position: relative;
-}
-
-.navLi {
 }
 
 .navAnchor::before {
