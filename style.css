@@ -13,35 +13,59 @@
     scroll-behavior: smooth;
 }
 
+body {
+}
+
 #landingPage {
     height: 100vh;
-    width: 100vw;
-    background-image: url(BlueBackground.png);
+    background-image: url('BlueBackground.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
 }
-
-.show {
-    position: fixed;
+nav ul li {
+    list-style-type: none;
+    display: inline;
 }
 
 .navAnchor {
     text-decoration: none;
-    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    padding-bottom: 0.24rem;
+    position: relative;
+}
+
+.navLi {
+}
+
+.navAnchor::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255,255,255);
+    transition: width 0.20s ease-in-out, left 0.20s ease-in-out;
+}
+
+.navAnchor:hover::before {
+    width: 100%;
+    left: 0;
 }
 
 #projectsSection {
     height: 100vh;
-    width: 100vw;
-background-image: url(BlueBackground.png);
+background-image: url('BlueBackground.png');
 background-repeat: no-repeat;
 background-size: 100%;
 }
+
